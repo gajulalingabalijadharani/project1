@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+
+</head>
+   <body>
+         <div>
+        <img  src="c:\Users\Ravindra\Downloads\kajal.jfif">
+         <h1>  Beauty girl</h1>
+        <h5 style="color:black;"> stranger</h5>
+          <div>
+                 <button id="remove">Unfriend</button>
+                 <button id="add">Addfriend</button> 
+          </div>
+    </div>
+
+
+<script>  
+var stat = document.querySelector("h5");
+var addFriend = document.querySelector("#add");
+var unFriend = document.querySelector("#remove");
+
+ addFriend.addEventListener("click",function(){
+    stat.innerHTML = "Friends";
+    stat.style.color = "green";
+ });
+ unFriend.addEventListener("click",function(){
+    stat.innerHTML = "Stranger";
+    stat.style.color = "red";
+ });
+     </script>
+
+</body>
+</html>
